@@ -1,0 +1,19 @@
+h1,h2 {
+	text-decoration: background;
+	font-weight: 400;
+}
+
+body {
+    color: black;
+    background: lightgrey;
+    text-align: center;
+}	
+P{
+	line-height: normal;
+	text-transform: math-auto;
+
+}
+footer{
+	line-height: 50;
+
+}
