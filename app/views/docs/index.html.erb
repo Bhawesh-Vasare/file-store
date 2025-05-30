@@ -1,0 +1,10 @@
+<h1>Docs</h1>
+
+<div id="docs">
+  <% @docs.each do |doc| %>
+    <div>
+        <%= doc.title %>
+        <%= doc.content%>
+    </div>
+  <% end %>
+</div>
