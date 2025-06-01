@@ -45,6 +45,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 gem 'byebug', '~> 11.1', '>= 11.1.3'
+gem 'devise', '~> 4.9', '>= 4.9.4'
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
