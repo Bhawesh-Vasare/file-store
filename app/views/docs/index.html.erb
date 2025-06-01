@@ -3,7 +3,10 @@
 <div id="docs">
   <% @docs.each do |doc| %>
     <div>
-        <%= doc.title %>
+         <a href="/docs/<%= doc.id %>">
+           <%= doc.title %>
+        </a>
+    </br>
         <%= doc.content%>
     </div>
   <% end %>

@@ -1,3 +1,10 @@
-<h1><%= @doc.title %> </h1>
-<h1><%= @doc.content%></h1>
-<%= link_to "Back", docs_path%>
+<h1><%= @doc.title %></h1>
+<h2><%= @doc.content %></h2>
+
+<%= link_to "Back", docs_path %><br>
+<%= link_to "Edit Doc", edit_doc_path(@doc) %><br>
+
+
+
+
+<%= button_to "Delete", @doc, method: :delete, data: { turbo_confirm: "Are you sure?" } %>            

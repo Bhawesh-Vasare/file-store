@@ -1,0 +1,16 @@
+<%= form_with model: doc do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
