@@ -5,7 +5,8 @@ class DocsController < ApplicationController
 
 
 	def index
-		@docs = Doc.all.order(created_at: :desc)
+		byebug
+		@docs = Doc.where(user_id: current_user.id).order(created_at: :desc)
 	end
 
 	def show
