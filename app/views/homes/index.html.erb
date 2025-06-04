@@ -5,21 +5,25 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Welcome Page</title>
       <!-- <link rel="stylesheet" href="style.css"> --> <!-- Link your SCSS file -->
+      <%= stylesheet_link_tag 'home.css' %>
       
    </head>
    <body>
        <header>
-           <h1>Welcome to My Website</h1>
-           <p>This is a sample welcome page.</p>
+          FileCabinate
+          <a> <%= link_to 'Log In', new_user_session_path %></a>
        </header>
        <main>
            <section>
-               <h2>About Me</h2>
-               <p>Some information about myself.</p>
+               <h2>FILE CABINATE</h2>
+               <p>Your life worked,Organized,always</p>
            </section>
        </main>
        <footer>
            <p>&copy; 2025 My Website</p>
        </footer>
+       <%= link_to 'Enter', new_user_registration_path %>
+       <%= link_to 'Log In', new_user_session_path %>
+       <br>
    </body>
    </html>

@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
   
-  root "homes#index"
 
   resources :docs
+
+  authenticated :user do 
+    root "docs#index", as: "authenticated_root"
+  end 
+
+  root "homes#index"
 end

@@ -3,8 +3,4 @@
 
 <%= link_to "Back", docs_path %><br>
 <%= link_to "Edit Doc", edit_doc_path(@doc) %><br>
-
-
-
-
 <%= button_to "Delete", @doc, method: :delete, data: { turbo_confirm: "Are you sure?" } %>            

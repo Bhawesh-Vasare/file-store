@@ -5,8 +5,7 @@ class DocsController < ApplicationController
 
 
 	def index
-		byebug
-		@docs = Doc.where(user_id: current_user.id).order(created_at: :desc)
+		@docs = Doc.where(user_id: current_user).order(created_at: :desc)
 	end
 
 	def show
@@ -14,17 +13,18 @@ class DocsController < ApplicationController
 	end 
 
 	def new
-		@doc = current_user.docs.build
+		byebug
+		@doc = current_user&.docs&.build
 	end 
 
 	def create	
-		@doc = current_user.docs.build(doc_params)
-		if @doc.save
-			redirect_to @doc
+	  @doc = current_user&.docs&.build(doc_params)
+	  if @doc.save
+		 redirect_to @doc
 			
-		else
-			render :new
-		end 
+	    else
+		  render :new
+	   end 
 	end
 
 	def edit
