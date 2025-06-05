@@ -9,21 +9,21 @@
       
    </head>
    <body>
-       <header>
-          FileCabinate
-          <a> <%= link_to 'Log In', new_user_session_path %></a>
-       </header>
+       <div>
+           FileCabinate
+           <p id='login'><%= link_to 'Log In', new_user_session_path %></p>
+       </div>
        <main>
            <section>
-               <h2>FILE CABINATE</h2>
+               <h1>FILE CABINATE</h1>
                <p>Your life worked,Organized,always</p>
+               <button> <%= link_to 'Enter', new_user_registration_path %></button>
            </section>
        </main>
        <footer>
-           <p>&copy; 2025 My Website</p>
+          
        </footer>
-       <%= link_to 'Enter', new_user_registration_path %>
-       <%= link_to 'Log In', new_user_session_path %>
+        
        <br>
    </body>
    </html>
