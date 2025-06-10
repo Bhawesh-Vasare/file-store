@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	color: black;
+  color: black;
 }
 
 h1,h2{
@@ -15,7 +15,6 @@ h1,h2{
 
 body {
     color: black;
-   
 }
 #login{
 	line-height: normal;
@@ -59,6 +58,7 @@ button {
   cursor: pointer;
   margin-top: 45px;
   margin-left: 562px;
+  margin-bottom: 154px;
 }
 
 
@@ -68,4 +68,7 @@ a{
 	width: 200px;
     height: 80px;
     font-size: 20px;
+}
+#join_button{
+	text-align: center;
 }
