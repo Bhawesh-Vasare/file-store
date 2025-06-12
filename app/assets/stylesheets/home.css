@@ -16,6 +16,7 @@ h1,h2{
 body {
     color: black;
 }
+
 #login{
 	line-height: normal;
 	text-align: right;
@@ -65,10 +66,5 @@ button {
 a{
 	text-decoration: none;
 	text-align: center;
-	width: 200px;
-    height: 80px;
-    font-size: 20px;
 }
-#join_button{
-	text-align: center;
-}
+
