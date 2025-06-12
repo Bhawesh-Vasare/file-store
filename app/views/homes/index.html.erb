@@ -5,7 +5,9 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Welcome Page</title>
       <!-- <link rel="stylesheet" href="style.css"> --> <!-- Link your SCSS file -->
-      <%= stylesheet_link_tag 'home.css' %>
+     <% content_for :extra_css do %>
+       <%= stylesheet_link_tag 'home', media: 'all' %>
+     <% end %>
       
    </head>
    <body>

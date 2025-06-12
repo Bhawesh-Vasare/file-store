@@ -13,7 +13,6 @@ class DocsController < ApplicationController
 	end 
 
 	def new
-		byebug
 		@doc = current_user&.docs&.build
 	end 
 
