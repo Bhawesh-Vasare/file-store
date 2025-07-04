@@ -44,7 +44,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
-gem 'byebug', '~> 11.1', '>= 11.1.3'
+gem 'byebug', '~> 12.0'
 gem 'devise', '~> 4.9', '>= 4.9.4'
 
 group :development do
